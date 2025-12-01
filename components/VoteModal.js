@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { VOTE_OPTIONS } from './constants';
+import { VOTE_OPTIONS } from './Constants';
 import { X } from 'lucide-react';
 
 export default function VoteModal({ isOpen, onClose, onVote, currentVote }) {
@@ -56,4 +56,5 @@ export default function VoteModal({ isOpen, onClose, onVote, currentVote }) {
       </motion.div>
     </div>
   );
+
 }
