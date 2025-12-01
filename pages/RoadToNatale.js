@@ -4,7 +4,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { motion, AnimatePresence } from "framer-motion";
 import AccessGate from "../components/AccessGate";
 import VoteModal from "../components/VoteModal";
-import { USERS, VOTE_OPTIONS } from "../components/constants";
+import { USERS, VOTE_OPTIONS } from "../components/Constants";
 import { Calendar, Snowflake, Star } from "lucide-react";
 
 export default function RoadToNatale() {
@@ -263,4 +263,5 @@ export default function RoadToNatale() {
       </AnimatePresence>
     </div>
   );
+
 }
