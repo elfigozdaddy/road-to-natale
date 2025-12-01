@@ -1,0 +1,34 @@
+{
+  "name": "DailyVote",
+  "type": "object",
+  "properties": {
+    "day": {
+      "type": "number",
+      "description": "Giorno del mese (1-24)"
+    },
+    "user_key": {
+      "type": "string",
+      "enum": [
+        "E",
+        "M",
+        "P"
+      ],
+      "description": "Identificativo dell'utente (E, M, o P)"
+    },
+    "value": {
+      "type": "number",
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "description": "Valore del voto: 0 (Cattivo), 1 (Medio), 2 (Bravissimo), 3 (Fantastico)"
+    }
+  },
+  "required": [
+    "day",
+    "user_key",
+    "value"
+  ]
+}
