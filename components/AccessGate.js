@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Lock, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { USERS } from './constants';
+import { USERS } from './Constants';
 
 export default function AccessGate({ onLogin }) {
   const [code, setCode] = useState('');
@@ -69,4 +69,5 @@ export default function AccessGate({ onLogin }) {
       </motion.div>
     </div>
   );
+
 }
